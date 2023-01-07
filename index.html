@@ -1,82 +1,75 @@
-<!-- Created -->
 <!DOCTYPE html>
-<html lang="en">
+<htm lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Quiz App </title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAweome CDN Link for Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+
+
 </head>
+
 <body>
-    <!-- start Quiz button -->
-    <div class="start_btn"><button>Start Quiz</button></div>
+    <h1>Quiz</h1>
+    <form id="quiz-form">
+      <!-- Add your questions here -->
+      <div class="question">
+        <p>How do you start an HTML page?</p>
+        <div class="answer">
+          <input type="radio" name="q1" value="Paris">!DOCTYPE<br>
+          <input type="radio" name="q1" value="Berlin">!DOGTYPE<br>
+          <input type="radio" name="q1" value="London">!START<br>
+          <input type="radio" name="q1" value="Rome">!HTML<br>
+        </div>
+      </div>
+      <div class="question">
+        <p>How do you attach the style page?</p>
+        <div class="answer">
+          <input type="radio" name="q2" value="Rome">Link<br>
+          <input type="radio" name="q2" value="Berlin">Script<br>
+          <input type="radio" name="q2" value="London">Input<br>
+          <input type="radio" name="q2" value="Paris">Import<br>
+        </div>
+      </div>
+        <div class="question">
+            <p>Is coding fun?</p>
+            <div class="answer">
+            <input type="radio" name="q3" value="London">Yes<br>
+            <input type="radio" name="q3" value="Berlin">No<br>
+            <input type="radio" name="q3" value="Paris">Maybe<br>
+            <input type="radio" name="q3" value="Rome">Kinda<br>
+            </div>
+        </div>
+        <div class="question">
+            <p>How do you link up the js page?</p>
+            <div class="answer">
+            <input type="radio" name="q4" value="Paris">Link<br>
+            <input type="radio" name="q4" value="Berlin">Script<br>
+            <input type="radio" name="q4" value="London">Src<br>
+            <input type="radio" name="q4" value="Rome">Import<br>
+            </div>
+        </div>
+        <div class="question">
+            <p>Is javascript fun?</p>
+            <div class="answer">
+            <input type="radio" name="q5" value="Paris">Yes<br>
+            <input type="radio" name="q5" value="Berlin">No<br>
+            <input type="radio" name="q5" value="London">Kinda<br>
+            <input type="radio" name="q5" value="Rome">Maybe<br>
+            </div>
+        </div>
 
-    <!-- Info Box -->
-    <div class="info_box">
-        <div class="info-title"><span>Some Rules of this Quiz</span></div>
-        <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-            <div class="info">2. Once you select your answer, it can't be undone.</div>
-            <div class="info">3. You can't select any option once time goes off.</div>
-            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-            <div class="info">5. You'll get points on the basis of your correct answers.</div>
-        </div>
-        <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
-        </div>
+      <!-- Add more questions here -->
+      <input type="submit" value="Submit Quiz">
+    </form>
+    <div id="results" style="display: none;">
+      <h2>Results</h2>
+      <p id="score">You scored 0 out of 5</p>
     </div>
 
-    <!-- Quiz Box -->
-    <div class="quiz_box">
-        <header>
-            <div class="title">Awesome Quiz Application</div>
-            <div class="timer">
-                <div class="time_left_txt">Time Left</div>
-                <div class="timer_sec">15</div>
-            </div>
-            <div class="time_line"></div>
-        </header>
-        <section>
-            <div class="que_text">
-                <!-- Here I've inserted question from JavaScript -->
-            </div>
-            <div class="option_list">
-                <!-- Here I've inserted options from JavaScript -->
-            </div>
-        </section>
-
-        <!-- footer of Quiz Box -->
-        <footer>
-            <div class="total_que">
-                <!-- Here I've inserted Question Count Number from JavaScript -->
-            </div>
-            <button class="next_btn">Next Que</button>
-        </footer>
-    </div>
-
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete_text">You've completed the Quiz!</div>
-        <div class="score_text">
-            <!-- Here I've inserted Score Result from JavaScript -->
-        </div>
-        <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
-        </div>
-    </div>
-
-    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
-    <script src="./questions.js"></script>
-
-    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="./script.js"></script>
 
 </body>
+
+
 </html>
